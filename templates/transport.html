@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/transport.css') }}">
+    <meta charset="UTF-8">
+    <title>DCHARTE Generator Transport</title>
+</head>
+<body>
+<div style="text-align: center;">
+		<img src="https://raw.githubusercontent.com/imjeremy5/DCHARTE/main/LOGO.png" class=center">
+
+<h1> DCHARET Generator </h1>
+	<h1>Transport</h1>
+
+
+<h2>Dispatch Information</h2>
+<form action="tgenerator" method="post">
+
+			<p> Unit Number: </p>
+			<select name="unit" id="unit">
+				<option value="  " selected>  </option>
+				<option value="M-1411">M-1411</option>
+				<option value="M-1412">M-1412</option>
+				<option value="M-1421">M-1421</option>
+				<option value="M-1431">M-1431</option>
+				<option value="M-1432">M-1432</option>
+				<option value="E=1411">E-1411</option>
+				<option value="E-1421">E-1421</option>
+				<option value="E-1431">M-1431</option>
+				<option value="Battalion 14">Battalion-14</option>
+				<option value="I WILL EDIT THIS LATER">I WILL EDIT THIS LATER</option>
+			</select>
+			<br>
+			<p>Address</p>
+			<input type="text" name="address">
+			<br>
+			<p> City/State: </p>
+			<select name="city" id="city">
+				<option value="Peach Springs, AZ,86434" selected>Peach Springs, AZ, 86434</option>
+				<option value="Grand Canyon West, AZ, 86434">Grand Canyon West, AZ, 83434</option>
+				<option value="Truxton, AZ, 86434">Truxton, AZ, 86434</option>
+				<option value="Kingman, AZ, 86401">Kingman, AZ, 86401</option>
+				<option value="Kingman, AZ, 86409">Kingman, AZ, 86409</option>
+				<option value="I WILL EDIT THIS LATER">I WILL EDIT THIS LATER</option>
+			</select>
+			<br>
+			<p> Reason for dispatch:</p>
+			<input type="text" name="rfd">
+			<br>
+			<p> Patients Age </p>
+			<input type="text" name="age">
+			<p> Age units. Months/Years?:</p>
+			<select name="au" id="au">
+				<option value="year" selected>Years</option>
+				<option value="month">Months</option>
+			</select>
+	<br>
+	<p> Gender: </p>
+	<select name="sex" id="sex">
+				<option value="  " selected>  </option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+	<br>
+	<p>Position the patient was found:</p>
+	<input type="text" name="pf">
+	<br>
+	<br>
+	<h2>Chief Complaint</h2>
+	<br>
+	<p>Chief Complaint (Preferably in quotes):</p>
+	<textarea id="cc" name="cc" rows="4" cols="50"></textarea>
+	<br>
+	<br>
+	<h2>History</h2>
+	<br>
+	<h4>History of present illness.</h4>
+	<p>Any pertinent information regarding the patients illness/injury given to you by the patient or bystanders as appropriate. SAMPLE/OPQRST, Pertinent negatives/positives, medical history, or medication allergies: </p>
+	<textarea id="hpi" name="hpi" rows="8" cols="50"></textarea>
+	<br>
+	<br>
+	<h2>Assessment</h2>
+	<br>
+	<p>Level of responsiveness</p>
+	<select name="loc" id="loc">
+				<option value="alert and oriented to person, place, time, and event" selected>A+Ox4</option>
+				<option value="alert and oriented to person, place, time, and event with ETOH on board">A+Ox4 with ETOH</option>
+				<option value="alert but disoriented">Alert but disoriented</option>
+				<option value="alert to verbal stimuli">Alert to verbal</option>
+				<option value="alert to painful stimuli">Alert to painful stimuli</option>
+				<option value="unresponsive">Unresponsive</option>
+			</select>
+	<p>Pupil Condition</p>
+	<select name="pc" id="pc">
+				<option value="PERRL" selected>PERRL</option>
+				<option value="sluggish">Sluggish</option>
+				<option value="fixed and dialated">Fixed and dialated</option>
+				<option value="unequal">Unequal</option>
+				<option value="*****NEED TO EDIT*****">I WILL EDIT THIS MANUALLY</option>
+	</select>
+	<p>Pupil Size (MM)</p>
+	<select name="ps" id="ps">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3" selected>3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+
+	</select>
+	<p>Lung Sounds</p>
+	<select name="ls" id="ls">
+				<option value=" sounds were clear and equal to all four quadrants"slected>Clear and Equal x4</option>
+				<option value=" sounds had wheezing in the lower quadrants"> Wheezing in the lowers</option>
+				<option value=" sounds had wheezing in all four quadrants">Wheezing x4</option>
+				<option value=" sounds had wheezing in the upper and absent lower quadrants">Wheezing uppers, absent lowers</option>
+				<option value=" sounds were absent in the lower quadrants">Absent lowers</option>
+				<option value=" sounds were rhonchi">Rhonchi</option>
+				<option value=" sounds had rails">Rails</option>
+				<option value=" ***NEED**TO**EDIT**THIS*** ">I WILL EDIT THIS MANUALLY</option>
+	</select>
+	<p>Did you place the patient on the monitor?</p>
+	<select name="mon" id="mon">
+				<option value="no">No</option>
+				<option value="5 lead">5-Lead</option>
+				<option value="12 lead">12- Lead</option>
+	</select>
+	<p>If yes, what Rhythm?</p>
+	<select name="rhythm" id="rhythm">
+				<option value="  ">  </option>
+				<option value="Normal Sinus Rhythm">Normal Sinus Rhythm</option>
+				<option value="Sinus Tachycardia">Sinus Tach</option>
+				<option value="Sinus Bradycardia">Sinus Brady</option>
+				<option value="Atrial fibrillation">A-Fib</option>
+				<option value="**NEED**TO**EDIT**">I WILL EDIT THIS MANUALLY</option>
+	</select>
+	<br>
+	<p>List any other findings during initial assessment that have not been addressed:</p>
+	<textarea id="ass_text" name="ass_text" rows="8" cols="50"></textarea>
+	<br>
+	<p>List any changes throughout care or after any interventions:</P>
+	<p>(If there are no significant changes, leave this blank. Report will be generated accordingly.)</p>
+	<textarea id="changes_text" name="changes_text" rows="8" cols="50"></textarea>
+	<br>
+	<br>
+
+	<h2>Treatment</h2>
+	<br>
+	<p>List any and all interventions</p>
+	<p>(This is typed directly into report)</p>
+	<textarea id="treatment_text" name="treatment_text" rows="8" cols="50"></textarea>
+	<br>
+	<br>
+	<h2>Transport</h2>
+	<br>
+	<p>Receiving provider name and title: (Example: RN-Jane)</p>
+	<input type= "text" name="rn">
+	<p>Time at transfer of care:</p>
+	<input type= "text" name="time">
+	<p>Your name and title: (Example: CEP-Smith)</p>
+	<input type= "text" name="name">
+	<br>
+	<br>
+	<h2>Exceptions</h2>
+	<br>
+	<p>List any Exceptions that occurred</p>
+	<p>(If none, leave blank. This section will not be generated if field is blank.</p>
+	<textarea id="exceptions_text" name="exceptions_text" rows="8" cols="50"></textarea>
+	<br>
+	<br>
+
+
+		<input type="submit" value="Generate Report" id="tgenerator">
+		</form>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

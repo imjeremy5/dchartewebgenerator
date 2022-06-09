@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+    
+    
+}
+
+p {
+    color: black;
+    font-family: Shanti;
+    font-size: 1.2em;
+    margin: 2px;
+ }
+
+ img {
+     text-align: center;
+     margin: 2px 0 20px 0;
+     width: 250px;
+
+ }
+
+select {
+     width: 250px;
+     background-color: lightgrey;
+     height: 30px;
+     margin: 2px;
+     border: none;
+     border-radius: 10px;
+     font-family: Shanti;
+     font-size: 1.3em;
+}
+
+
+input {
+     width: 250px;
+     background-color: lightgrey;
+     height: 30px;
+     margin: 2px;
+     border: none;
+     border-radius: 10px;
+     font-family: Shanti;
+     font-size: 1.3em;
+
+ }
+
+ input:focus {
+    border: solid 5px #00FFCE;
+    outline: none;
+ }
+
+textarea {
+     
+     background-color: lightgrey;
+     
+     margin: 2px;
+     border: none;
+     border-radius: 10px;
+     font-family: Shanti;
+     font-size: 1.3em;
+}
+
+#loc {
+     width: 250px;
+     background-color: lightgrey;
+     height: 30px;
+     margin: 2px;
+     border: none;
+     border-radius: 10px;
+     font-family: Shanti;
+     font-size: 1.3em;
+}
+
+#tgenerator {
+    background-color: green;
+    color: white;
+    width: 350px;
+    height: 150px;
+ }
+
+ #tgenerator:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#rgenerator {
+    background-color: green;
+    color: white;
+    width: 350px;
+    height: 150px;
+ }
+
+ #rgenerator:hover {
+    background-color: black;
+    cursor: pointer;
+}

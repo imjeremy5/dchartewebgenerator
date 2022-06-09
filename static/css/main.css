@@ -1,0 +1,76 @@
+body {
+    background-color: white;
+    
+}
+
+p {
+    color: black;
+    font-family: Shanti;
+    font-size: 1.2em;
+    margin: 2px;
+ }
+
+ img {
+     text-align: center;
+     margin: 2px 0 20px 0;
+     width: 250px;
+
+ }
+
+input {
+     width: 300px;
+     background-color: grey;
+     font-color: green;
+     height: 50px;
+     margin: 2px;
+     border: none;
+     border-radius: 10px;
+     font-family: Shanti;
+     text-align: center;
+     font-size: 1.3em;
+
+ }
+
+ input:focus {
+    border: solid 5px #00FFCE;
+    outline: none;
+ }
+
+#greet {
+    background-color: palevioletred;
+    color: white;
+    width: 200px;
+ }
+
+ #greet:hover {
+    background-color: mediumvioletred;
+    cursor: pointer;
+
+ }
+
+#transport {
+    background-color: blue;
+    color: white;
+    width: 350px;
+    height: 150px;
+ }
+
+ #transport:hover {
+    background-color: black;
+    cursor: pointer;
+
+ }
+
+
+#refusal {
+    background-color: green;
+    color: white;
+    width: 350px;
+    height: 150px;
+ }
+
+ #refusal:hover {
+    background-color: black;
+    cursor: pointer;
+
+ }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/tgenerator.css') }}">
+    <meta charset="UTF-8">
+    <title>DCHARTE Generator</title>
+</head>
+<body>
+<div style="text-align: center;">
+		<img src="https://raw.githubusercontent.com/imjeremy5/DCHARTE/main/LOGO.png" class=center">
+
+<h1> DCHARET Generator </h1>
+    <h1>Transport</h1>
+    <br>
+</div>
+
+    <form method="post">
+
+            {% for message in get_flashed_messages(category_filter=['h1'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['dispatch'])%}
+                 {{message}} </p>
+            {% endfor %}
+
+            {% for message in get_flashed_messages(category_filter=['h2'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['cc'])%}
+                {{message}} </p>
+            {% endfor %}
+
+            {% for message in get_flashed_messages(category_filter=['h3'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['hpi'])%}
+                 {{message}} </p>
+            {% endfor %}
+
+
+            {% for message in get_flashed_messages(category_filter=['h4'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['assessment'])%}
+                {{message}} </p>
+            {% endfor %}
+
+            {% for message in get_flashed_messages(category_filter=['h5'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['treatment'])%}
+                 {{message}} </p>
+            {% endfor %}
+
+            {% for message in get_flashed_messages(category_filter=['h6'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['transport'])%}
+                 {{message}} </p>
+            {% endfor %}
+
+             {% for message in get_flashed_messages(category_filter=['h7'])%}
+                <p> {{message}}
+            {% endfor %}
+                    <br>
+            {% for message in get_flashed_messages(category_filter=['exceptions'])%}
+                 {{message}}
+            {% endfor %}</p>
+            <p>**ALL TIMES APPROXIMATE**
+                <br>
+            END REPORT
+                <br>
+            {% for message in get_flashed_messages(category_filter=['sig'])%}
+                 {{message}} </p>
+            {% endfor %}
+
+
+
+
+    </form>
+
+</body>
+</html>
+
+

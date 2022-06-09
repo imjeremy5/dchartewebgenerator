@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> DCHARTE Generator</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+	</head>
+	<body>
+		<div style="text-align: center;">
+		<img src="https://raw.githubusercontent.com/imjeremy5/DCHARTE/main/LOGO.png" class=center">
+		<br>
+		<h1> Disclaimer </h1>
+		<p> This generator is to be used at your own risk. It is up to you, the provider, to ensure accurate
+		documentation of findings and actions taken. This piece of software is not responsible for what is submitted into your report.
+		It is assumed that you will copy the output of this generator into a word processor and edit to ensure accuracy and compliance with department standards prior to submission. In an attempt to save you time it makes a lot of assumptions that the call is an "ordinary" call. It requires editing by you to correct these assumptions in the output if needed. </p>
+		<br>
+		<h1> Choose One </h1>
+
+
+		<form action="transport" method="post">
+		<input type="submit" value="TRANSPORT" id="transport">
+		</form>
+		<form action="refusal" method="post">
+		<input type="submit" value="REFUSAL" id="refusal">
+		</form>
+
+		</div>
+
+
+
+
+	</body>
+</html>
